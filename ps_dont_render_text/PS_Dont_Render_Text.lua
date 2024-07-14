@@ -29,20 +29,13 @@ function PS_Dont_Render_Text:Run(moho)
 		local layer = moho.document:LayerByAbsoluteID(count)
 		if layer then
 			count = count + 1
-			-- if layer:LayerType() == MOHO.LT_TEXT then
-				-- print(layer:Name())
-				-- layer:SetEditOnly(true)
-			-- end
-			
+
 			if layer:LayerType() == MOHO.LT_TEXT then
 				-- print((layer:Name()))
 				layer:SetEditOnly(true)
 			end
-			-- print(layer:LayerType())
-			-- print(MOHO.LT_TEXT)
-			
-			-- text_layer:SetEditOnly(true)
-		
+
+
 		end
 	until not layer
 end

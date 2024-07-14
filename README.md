@@ -1,2 +1,2 @@
 # moho-lua
-Personnal script for Smith Micro Moho
+Personal scripts for LostMarble Moho
